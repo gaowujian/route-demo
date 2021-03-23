@@ -11,8 +11,8 @@ function App() {
       <br />
       <Link to="/other">其他页面</Link>
       <Switch>
+        <Route path="/login" component={Login} />
         <Route path="/" component={Home} />
-        <Route path="/login" exact component={Login} />
       </Switch>
     </Router>
   );
