@@ -4,13 +4,8 @@ import { Layout } from "antd";
 import { Route } from "react-router";
 import { Link } from "react-router-dom";
 const { Header, Sider, Content } = Layout;
-function About() {
-  return <div>我是一个about的页面</div>;
-}
-function Other() {
-  return <div>我是一个其他的页面</div>;
-}
-function Home() {
+
+function Home(props) {
   return (
     <Layout>
       <Header>我是一个公共的头部</Header>
@@ -25,10 +20,7 @@ function Home() {
             </li>
           </ul>
         </Sider>
-        <Content>
-          <Route path="/home/about" component={About}></Route>
-          <Route path="/home/other" component={Other}></Route>
-        </Content>
+        <Content>{props.children}</Content>
       </Layout>
     </Layout>
   );
