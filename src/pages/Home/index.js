@@ -18,16 +18,16 @@ function Home() {
         <Sider>
           <ul>
             <li>
-              <Link to="/home/about">详情页面</Link>
+              <Link to="/about">详情页面</Link>
             </li>
             <li>
-              <Link to="/home/other">其他页面</Link>
+              <Link to="/other">其他页面</Link>
             </li>
           </ul>
         </Sider>
         <Content>
-          <Route path="/home/about" component={About}></Route>
-          <Route path="/home/other" component={Other}></Route>
+          <Route path="/about" component={About}></Route>
+          <Route path="/other" component={Other}></Route>
         </Content>
       </Layout>
     </Layout>
