@@ -14,6 +14,10 @@ module.exports = override(
   }),
   addLessLoader({
     javascriptEnabled: true,
-    modifyVars: {},
+    modifyVars: {
+      "layout-header-background": "lightcoral",
+      "layout-sider-background": "lightgreen",
+      "layout-content-background": "lightblue",
+    },
   })
 );

@@ -1,16 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Login from "./pages/Login";
 function App() {
   return (
     <Router>
-      <Link to="/">首页</Link>
+      <Link to="/">登录也面</Link>
       <br />
-      <Link to="/about">详情页</Link>
+      <Link to="/home/about">详情页面</Link>
+      <br />
+      <Link to="/home/other">其他页面</Link>
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        <Route path="/" exact component={Login} />
+        <Route path="/home" component={Home} />
       </Switch>
     </Router>
   );
